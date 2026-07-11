@@ -379,6 +379,8 @@ footer .heart{color:var(--pink-deep)}
   .vinyl-label{font-size:0.38rem}
 }
 </style>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/hero_bg.webp" as="image">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/cake_lit_new.webp" as="image">
 </head>
 <body>
 
@@ -407,7 +409,7 @@ footer .heart{color:var(--pink-deep)}
   <div class="vinyl-tooltip" id="vinyl-tip">点击播放音乐</div>
 </div>
 <audio id="bg-music" loop preload="auto">
-  <source src="assets/music.mp3" type="audio/mpeg">
+  <source src="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/music.mp3" type="audio/mpeg">
 </audio>
 
 <!-- ===== MAIN ===== -->
@@ -417,7 +419,7 @@ footer .heart{color:var(--pink-deep)}
 
 <!-- HERO -->
 <section id="hero">
-  <img id="hero-bg" src="assets/hero_bg.webp" alt="" loading="eager">
+  <img id="hero-bg" src="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/hero_bg.webp" alt="" loading="eager">
   <div class="hero-overlay"></div>
   <div class="section-inner">
     <h1 class="hero-title" data-animate="fade-up">学姐，生日快乐</h1>
@@ -431,7 +433,7 @@ footer .heart{color:var(--pink-deep)}
   <div class="section-inner">
     <p class="cake-label" id="cake-label">点击蛋糕，许个愿吧</p>
     <div class="cake-scene" id="cake-scene">
-      <img class="cake-img" id="cake-img" src="assets/cake_lit_new.webp" alt="Birthday Cake" loading="eager">
+      <img class="cake-img" id="cake-img" src="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/cake_lit_new.webp" alt="Birthday Cake" loading="eager">
     </div>
     <div class="reveal-text" id="reveal-text"><span id="typewriter-target"></span><span class="typewriter-cursor" id="typewriter-cursor"></span></div>
     <div class="reveal-sub" id="reveal-sub">愿你所有的愿望都能实现</div>
@@ -452,7 +454,7 @@ footer .heart{color:var(--pink-deep)}
     <h2 class="section-heading" data-animate="fade-up">生日祝福视频</h2>
     <div class="video-wrapper">
       <video id="birthday-video" playsinline autoplay muted loop preload="auto" poster="assets/hero_bg.webp">
-        <source src="assets/birthday_video.mp4" type="video/mp4">
+        <source src="https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/birthday_video.mp4" type="video/mp4">
       </video>
 
     </div>
@@ -599,7 +601,7 @@ footer .heart{color:var(--pink-deep)}
   cakeScene.addEventListener('click',function(){
     if(cakeBlown)return;
     cakeBlown=true;
-    cakeImg.src='assets/cake_out_new.webp';
+    cakeImg.src='https://cdn.jsdelivr.net/gh/tongluoshao01/birthday@main/assets/cake_out_new.webp';
     cakeScene.classList.add('blown');
     cakeLabel.style.opacity='0';
     // launch confetti
